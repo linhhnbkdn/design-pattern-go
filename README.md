@@ -1,4 +1,4 @@
-# DESIGN PATTERN GO
+# Design Pattern Go
 
 ## Prerequisites
 - [Go](https://golang.org/doc/install)

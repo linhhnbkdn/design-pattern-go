@@ -75,6 +75,7 @@ func GetVoucher(factory VoucherAbstractFactory) Voucher {
 		Food: factory.GetFood(),
 	}
 }
+
 func main() {
 	voucherFactory, err := GetVoucherFactory("CoffeeMorning")
 	if err != nil {
