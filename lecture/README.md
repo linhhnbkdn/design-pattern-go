@@ -30,3 +30,6 @@
 - [Strategy](./behavioral/strategy)
 - [Template Method](./behavioral/template-method)
 - [Visitor](./behavioral/visitor)
+
+
+Video: https://www.youtube.com/watch?v=I611baCpNUw&list=PLOsM_3jFFQRmNCt68hxCdxi8i_fUx2wTZ&index=5
