@@ -20,3 +20,7 @@ func main() {
 	s := NotificationService{notificationType: "email"}
 	s.SendNotification("Hello world!")
 }
+
+
+// Khi gặp cùng vấn đề sử dụng switch case/if else, mà dùng chung 1 hành động thì có thể dùng strategy
+// Để giải quyết vấn đề này, ta có thể sử dụng strategy pattern
