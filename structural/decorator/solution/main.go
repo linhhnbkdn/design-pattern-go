@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Notifier interface {
 	SendMessage(msg string)
@@ -72,6 +74,8 @@ func (n NotifierDecorator) SendMessage(msg string) {
 }
 
 func (n NotifierDecorator) AddDecorator(notifier Notifier) NotifierDecorator {
+	fmt.Printf("Add decorator: %T \n", notifier)
+	fmt.Printf("Add decorator: %v \n", &n)
 	return NotifierDecorator{
 		core:     &n,
 		notifier: notifier,
@@ -81,7 +85,7 @@ func (n NotifierDecorator) AddDecorator(notifier Notifier) NotifierDecorator {
 func main() {
 	// notifier := NotifierService{
 	// 	notifier: EmailNotifier{},
-	// }
+	// 5
 	// notifier.SendMessage("Hello")
 	notifierMaster := NotifierDecorator{
 		notifier: EmailNotifier{},

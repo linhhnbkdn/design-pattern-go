@@ -12,8 +12,16 @@
 ### abstract-factory
 - [ ] [Abstract Factory]()
 - [ ] [Builder]()
+```
+- Độc lập với việc tạo ra các object phức tạp
+- Tức là A được build từ B,C thì B,C không cần biết A, và B và C không cần biết nhau
+- Chạy song song
+```
 - [ ] [Factory Method]()
 - [ ] [Prototype]()
+```
+1 Class chỉ tạo ra 1 object
+```
 - [ ] [Singleton]()
 ### structural
 - [ ] [Adapter]()
@@ -23,8 +31,20 @@
 - [ ] [Facade]()
 - [ ] [Flyweight]()
 - [ ] [Proxy]()
+- [x] [Façade]()
+```
+Gom module về thành 1 service
+```
 ### behavioral
 - [ ] [Chain of Responsibility]()
+
+```
+- Đưa request vào 1 chuối handler. Mỗi handler sẽ xử lý request hoặc chuyển request sang handler tiếp theo
+- Giống middware django
+- Cho request là chủ yếu
+- Input của 1 handler là output của handler trước
+- Chạy tuần tự
+```
 - [ ] [Command]()
 - [ ] [Interpreter]()
 - [ ] [Iterator]()
